@@ -7,11 +7,11 @@ if (appElement){
 
 function startApp(parent) {
     let subElement = document.createElement('span');
-    subElement.style.backgroundColor = "coral";
+    subElement.style.backgroundColor = "indianred";
     subElement.style.width = '80%';
     subElement.style.height = '20vh';
     subElement.style.display = 'inline-block';
-    subElement.innerHTML = 'Hello world !';
+    subElement.innerHTML = 'Les menus :';
     parent.appendChild(subElement);
 }
 
