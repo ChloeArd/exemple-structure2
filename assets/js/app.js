@@ -22,12 +22,13 @@ document.getElementById('theme-button').addEventListener("click", getTheme);
  *  Theme init
  */
 function getTheme(save) {
+    let root = document.getElementById("theme-path").value
     let theme = window.localStorage.getItem('theme');
     if (save) {
         theme = (theme !== "dark") ? "dark" : "light";
     }
     let style = document.querySelector('link');
-    style.href = "./assets/css/" + theme + ".css";
+    style.href = root + "/assets/css/" + theme + ".css";
     window.localStorage.setItem("theme", theme);
 }
 

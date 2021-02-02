@@ -1,8 +1,8 @@
 <!-- Inclusion du header se trouvant dans le fichier _partials/header.php -->
 <?php
 $title = "Title page 3";
-include './_partials/header.php';
-include './_partials/menu.php';
+include $_SERVER["DOCUMENT_ROOT"].'/pages/_partials/header.php';
+include $_SERVER["DOCUMENT_ROOT"].'/pages/_partials/menu.php';
 ?>
 
 <!-- Page content -->
@@ -10,4 +10,4 @@ include './_partials/menu.php';
     <div id="app-root"></div>
 </main>
 
-<?php include './_partials/footer.php';
+<?php include $_SERVER["DOCUMENT_ROOT"].'/pages/_partials/footer.php';

@@ -1,8 +1,8 @@
 <!-- Inclusion du header se trouvant dans le fichier _partials/header.php -->
 <?php
 $title = "Mon super index";
-include './_partials/header.php';
-include './_partials/menu.php';
+include $_SERVER["DOCUMENT_ROOT"].'/pages/_partials/header.php';
+include $_SERVER["DOCUMENT_ROOT"].'/pages/_partials/menu.php';
 ?>
 
 <!-- Page content -->
@@ -18,4 +18,4 @@ include './_partials/menu.php';
     </section>
 </main>
 
-<?php include './_partials/footer.php';
+<?php include $_SERVER["DOCUMENT_ROOT"].'/pages/_partials/footer.php';
